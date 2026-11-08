@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1E1E1E;
+    color: #FF8C00;
+    line-height: 1.6;
+}
+
+.main-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF8C00;
+    padding: 15px 30px;
+    color: #000000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo h1 {
+    font-size: 50px;
+    font-weight: 750;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+.header-logo span {
+font-size: 20px;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(2, auto); 
+    gap: 10px;                            
+}
+
+.nav-btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.nav-btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-1px);
+    color: #000000;
+}
+
+.nav-btn:active {
+    transform: translateY(1px);
+}
+
+.ingriss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 24px 24px;
+}
+
+.team-section {
+    padding: 24px 8% 70px;
+}
+
+.team-section h2 {
+    margin-bottom: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.member-card {
+    align-self: start;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #1e1e1e;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.member-card summary {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    color: #1e1e1e;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    list-style-position: inside;
+}
+
+.member-card summary:focus-visible {
+    outline: 3px solid #ff8c00;
+    outline-offset: -3px;
+}
+
+.member-card p {
+    padding: 0 24px 24px;
+    color: #333333;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .member-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-section {
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+}
+
+.footer {
+    background: #1E1E1E;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footer-content {
+    padding: 50px 20px;
+}
+
+.footer-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-content h2 span {
+    color: #FF8C00;
+}
+
+.footer-content p {
+    color: #d0dfd3;
+    line-height: 1.6;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #FF8C00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    background: #FF8C00;
+    color: #1E1E1E;
+}
+
+.footer-bottom {
+    border-top: 1px solid #FF8C00;
+    padding: 18px;
+    font-size: 14px;
+    color: #fafefc;
+}
